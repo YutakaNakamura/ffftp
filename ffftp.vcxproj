@@ -70,7 +70,7 @@
     <CodeAnalysisRuleSet>NativeMinimumRules.ruleset</CodeAnalysisRuleSet>
     <RunCodeAnalysis>true</RunCodeAnalysis>
     <CodeAnalysisTreatWarningsAsErrors>true</CodeAnalysisTreatWarningsAsErrors>
-    <IncludePath>boost-regex/include;$(IncludePath)</IncludePath>
+    <IncludePath>boost-regex/include;./;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>$(Configuration)\$(PlatformTarget)\</OutDir>
@@ -79,7 +79,7 @@
     <CodeAnalysisRuleSet>NativeMinimumRules.ruleset</CodeAnalysisRuleSet>
     <RunCodeAnalysis>true</RunCodeAnalysis>
     <CodeAnalysisTreatWarningsAsErrors>true</CodeAnalysisTreatWarningsAsErrors>
-    <IncludePath>boost-regex/include;$(IncludePath)</IncludePath>
+    <IncludePath>boost-regex/include;./;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(Configuration)\$(PlatformTarget)\</OutDir>
@@ -88,7 +88,7 @@
     <CodeAnalysisRuleSet>NativeMinimumRules.ruleset</CodeAnalysisRuleSet>
     <RunCodeAnalysis>true</RunCodeAnalysis>
     <CodeAnalysisTreatWarningsAsErrors>true</CodeAnalysisTreatWarningsAsErrors>
-    <IncludePath>boost-regex/include;$(IncludePath)</IncludePath>
+    <IncludePath>boost-regex/include;./;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(Configuration)\$(PlatformTarget)\</OutDir>
@@ -97,7 +97,7 @@
     <CodeAnalysisRuleSet>NativeMinimumRules.ruleset</CodeAnalysisRuleSet>
     <RunCodeAnalysis>true</RunCodeAnalysis>
     <CodeAnalysisTreatWarningsAsErrors>true</CodeAnalysisTreatWarningsAsErrors>
-    <IncludePath>boost-regex/include;$(IncludePath)</IncludePath>
+    <IncludePath>boost-regex/include;./;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -112,7 +112,7 @@
       <PrecompiledHeaderFile>common.h</PrecompiledHeaderFile>
       <SDLCheck>true</SDLCheck>
       <EnablePREfast>true</EnablePREfast>
-      <AdditionalOptions>/Zc:char8_t- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/Zc:char8_t- /wd 26451 /wd 33010 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -140,7 +140,7 @@
       <PrecompiledHeaderFile>common.h</PrecompiledHeaderFile>
       <SDLCheck>true</SDLCheck>
       <EnablePREfast>true</EnablePREfast>
-      <AdditionalOptions>/Zc:char8_t- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/Zc:char8_t- /wd 26451 /wd 33010 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -168,7 +168,7 @@
       <PrecompiledHeaderFile>common.h</PrecompiledHeaderFile>
       <SDLCheck>true</SDLCheck>
       <EnablePREfast>true</EnablePREfast>
-      <AdditionalOptions>/Zc:char8_t- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/Zc:char8_t- /wd 26451 /wd 33010 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -198,7 +198,7 @@
       <PrecompiledHeaderFile>common.h</PrecompiledHeaderFile>
       <SDLCheck>true</SDLCheck>
       <EnablePREfast>true</EnablePREfast>
-      <AdditionalOptions>/Zc:char8_t- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/Zc:char8_t- /wd 26451 /wd 33010 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>

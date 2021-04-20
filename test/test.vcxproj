@@ -74,28 +74,28 @@
     <CodeAnalysisRuleSet>NativeMinimumRules.ruleset</CodeAnalysisRuleSet>
     <OutDir>$(Configuration)\$(PlatformTarget)\</OutDir>
     <IntDir>$(Configuration)\$(PlatformTarget)\</IntDir>
-    <IncludePath>../boost-regex/include;$(IncludePath)</IncludePath>
+    <IncludePath>../boost-regex/include;../;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <RunCodeAnalysis>true</RunCodeAnalysis>
     <CodeAnalysisRuleSet>NativeMinimumRules.ruleset</CodeAnalysisRuleSet>
     <OutDir>$(Configuration)\$(PlatformTarget)\</OutDir>
     <IntDir>$(Configuration)\$(PlatformTarget)\</IntDir>
-    <IncludePath>../boost-regex/include;$(IncludePath)</IncludePath>
+    <IncludePath>../boost-regex/include;../;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <RunCodeAnalysis>true</RunCodeAnalysis>
     <CodeAnalysisRuleSet>NativeMinimumRules.ruleset</CodeAnalysisRuleSet>
     <OutDir>$(Configuration)\$(PlatformTarget)\</OutDir>
     <IntDir>$(Configuration)\$(PlatformTarget)\</IntDir>
-    <IncludePath>../boost-regex/include;$(IncludePath)</IncludePath>
+    <IncludePath>../boost-regex/include;../;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <RunCodeAnalysis>true</RunCodeAnalysis>
     <CodeAnalysisRuleSet>NativeMinimumRules.ruleset</CodeAnalysisRuleSet>
     <OutDir>$(Configuration)\$(PlatformTarget)\</OutDir>
     <IntDir>$(Configuration)\$(PlatformTarget)\</IntDir>
-    <IncludePath>../boost-regex/include;$(IncludePath)</IncludePath>
+    <IncludePath>../boost-regex/include;../;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -107,7 +107,7 @@
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <TreatWarningAsError>true</TreatWarningAsError>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <AdditionalOptions>/Zc:char8_t- /Zc:strictStrings- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/Zc:char8_t- /Zc:strictStrings- /wd 26451 /wd 33010 %(AdditionalOptions)</AdditionalOptions>
       <EnablePREfast>true</EnablePREfast>
     </ClCompile>
     <Link>
@@ -125,7 +125,7 @@
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <TreatWarningAsError>true</TreatWarningAsError>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <AdditionalOptions>/Zc:char8_t- /Zc:strictStrings- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/Zc:char8_t- /Zc:strictStrings- /wd 26451 /wd 33010 %(AdditionalOptions)</AdditionalOptions>
       <OmitFramePointers>true</OmitFramePointers>
       <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
       <EnablePREfast>true</EnablePREfast>
@@ -146,7 +146,7 @@
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <TreatWarningAsError>true</TreatWarningAsError>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <AdditionalOptions>/Zc:char8_t- /Zc:strictStrings- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/Zc:char8_t- /Zc:strictStrings- /wd 26451 /wd 33010 %(AdditionalOptions)</AdditionalOptions>
       <OmitFramePointers>true</OmitFramePointers>
       <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
       <EnablePREfast>true</EnablePREfast>
@@ -169,7 +169,7 @@
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <TreatWarningAsError>true</TreatWarningAsError>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <AdditionalOptions>/Zc:char8_t- /Zc:strictStrings- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/Zc:char8_t- /Zc:strictStrings- /wd 26451 /wd 33010 %(AdditionalOptions)</AdditionalOptions>
       <EnablePREfast>true</EnablePREfast>
     </ClCompile>
     <Link>
