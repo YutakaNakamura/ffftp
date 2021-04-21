@@ -1,0 +1,4 @@
+total 4
+-rw-r-----. 1 grp 36 Apr 20 19:13 newfile.txt
+-rw-rw----. 1 grp  0 Apr 20 19:07 testfile1.txt
+-rw-rw----. 1 grp  0 Apr 20 19:08 testfile2.txt
